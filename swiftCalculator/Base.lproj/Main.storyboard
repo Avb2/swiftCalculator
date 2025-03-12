@@ -37,21 +37,33 @@
                                 <rect key="frame" x="55" y="251" width="35" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQW-ea-jZj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xot-kj-fkN">
                                 <rect key="frame" x="140" y="251" width="32" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="minusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mgm-73-8vY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-W4-aQA">
                                 <rect key="frame" x="224" y="251" width="29" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="/"/>
+                                <connections>
+                                    <action selector="divideBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4a-CP-Kda"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-n5-aPq">
                                 <rect key="frame" x="306" y="251" width="33" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="x"/>
+                                <connections>
+                                    <action selector="multiplyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7Z-O9-1SN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-9W-6S4">
                                 <rect key="frame" x="163" y="378" width="66" height="21"/>
@@ -64,7 +76,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Dg6-W4-aQA" secondAttribute="trailing" constant="140" id="23o-k3-Bqn"/>
-                            <constraint firstItem="G4V-n5-aPq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dg6-W4-aQA" secondAttribute="trailing" symbolic="YES" id="2VW-fr-A1f"/>
+                            <constraint firstItem="G4V-n5-aPq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dg6-W4-aQA" secondAttribute="trailing" constant="8" symbolic="YES" id="2VW-fr-A1f"/>
                             <constraint firstItem="Dg6-W4-aQA" firstAttribute="leading" secondItem="xot-kj-fkN" secondAttribute="trailing" constant="52" id="5hx-JV-wuS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G4V-n5-aPq" secondAttribute="trailing" constant="54" id="7xz-k2-Ao6"/>
                             <constraint firstItem="vLz-RX-efF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="B5z-K3-hP7"/>
@@ -83,6 +95,11 @@
                             <constraint firstItem="Dg6-W4-aQA" firstAttribute="top" secondItem="AyG-KE-i9V" secondAttribute="bottom" constant="77" id="whf-qg-j66"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerOutput" destination="c0d-9W-6S4" id="K7Y-xp-0CJ"/>
+                        <outlet property="number1Input" destination="yPX-42-S13" id="dBf-8s-EnA"/>
+                        <outlet property="number2Input" destination="AyG-KE-i9V" id="tGx-dD-7QQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
